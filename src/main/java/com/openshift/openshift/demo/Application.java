@@ -11,7 +11,7 @@ public class Application {
 
              @GetMapping("/")
 	     public String getMessage(){
-		return "Welcome to Spring Boot and it is deployed into OpenShift";
+		return "Welcome to Spring Boot and your application is deployed into OpenShift";
 	}
 
 	public static void main(String[] args) {
