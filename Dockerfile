@@ -1,7 +1,5 @@
 FROM openjdk:8
 MAINTAINER Sunil
-COPY src /home/app/src
-COPY pom.xml /home/app
-RUN mvn -f /home/app/pom.xml clean package
+COPY target/springboot-openshift-docker.jar springboot-openshift-docker.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/home/app/target/springboot-openshift-docker.jar"]
+ENTRYPOINT ["java", "-jar", "/springboot-openshift-docker.jar"]
