@@ -13,7 +13,7 @@
        spec:
          containers:
          - name: spring-demo
-           image: registry.apps.sandbox.x8i5.p1.openshiftapps.com/sunila123-dev/spring-openshift:latest
+           image: image-registry.openshift-image-registry.svc:5000/sunila123-dev/spring-openshift:latest
     
 ---
 
